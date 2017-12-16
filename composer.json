@@ -1,0 +1,27 @@
+{
+    "name": "zegnat/simplisticrouter",
+    "description": "The simplest of routers, just what I needed.",
+    "require": {
+        "http-interop/http-server-handler": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.2"
+    },
+    "license": "0BSD",
+    "authors": [
+        {
+            "name": "Martijn van der Ven",
+            "email": "martijn@vanderven.se"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zegnat\\SimplisticRouter\\": "src/"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    }
+}
